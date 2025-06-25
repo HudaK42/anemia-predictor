@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar">
+        <div><strong>Anemia</strong></div>
+        <div><a href="/">Home</a></div>
+    </div>
+
+    <div class="hero result-hero">
+        <h2>Result</h2>
+        <p>{{ prediction_text }}</p>
+    </div>
+
+    <div class="container">
+        <h4>Contact Us</h4>
+        <p><strong>Huda Kousar</strong><br>
+        Hyderabad, Telangana, India<br>
+        Email: hudakousarmohamad@gmail.com</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* static/style.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+
+.navbar a, .navbar button {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-weight: 600;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero {
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('/static/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+}
+
+.result-hero {
+    background-image: url('/static/images/result.jpg');
+}
+
+.hero h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+input[type="text"], select, input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button, input[type="submit"] {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #d7372f;
+}
+
+/* Validation error styling */
+.errors {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Info cards for medical terms */
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.info-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-box h4 {
+    margin-bottom: 10px;
+    color: #f44336;
+}
+
+.info-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Predict form responsiveness */
+#predict-form {
+    background-color: white;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    input[type="text"], select, button, input[type="submit"] {
+        font-size: 14px;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 24px;
+    }
+}
