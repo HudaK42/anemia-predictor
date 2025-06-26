@@ -30,7 +30,7 @@ body {
 }
 
 .hero {
-    color: white;
+    color: black;
     text-align: center;
     padding: 100px 20px;
     background-image: url('/static/images/background.jpg');
